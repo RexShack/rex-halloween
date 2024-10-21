@@ -50,7 +50,6 @@ lib.cron.new(Config.CronJob, function ()
 
     if not Config.HalloweenWeather then
         if not weatherreset then
-            print('you are here')
             TriggerClientEvent('rex-halloween:client:resetweather', -1)
             exports.weathersync:setWeather('sunny', 25.0, false, false)
             weatherreset = true
